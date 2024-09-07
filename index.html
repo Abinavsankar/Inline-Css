@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Game Station
+    </title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ebeaf3;
+            color: #15131b;
+        }
+        img {
+            
+            
+            width: 600px;
+            
+            background-size: cover;
+            background-position:center;
+        }
+        .web-btn{
+            width:10%;
+            padding: 10px;
+            cursor:pointer;
+            background-color:#6d003b;
+            border:none;
+            color: #fff;
+
+
+
+        }
+        .header {
+            background-color:#1e1c27;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .header h1 {
+            color: #ebe3e7;
+            margin: 0;
+            font-size: 36px;
+        }
+        .header p {
+            font-size: 24px;
+            color: #e4d9df;
+        }
+        .dropdown-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        
+        
+        .games {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        
+        
+        .games-row1 {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            
+            padding: 10px;
+        }
+        
+        .row1  {
+            flex-basis: 32%;
+            width: 300px;
+            margin: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .row1 img {
+            width: 250px;
+            height: 400px;
+            object-fit: cover;
+        }
+        .row1 p{
+            color:#6d003b;
+
+        }
+        .row1-btn{
+            width:10;
+            padding: 10px;
+            cursor:pointer;
+            background-color:#6d003b;
+            border:none;
+            color: #fff;
+
+        }
+        .row-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .contact-us {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact-us h2 {
+            color: #6d003b;
+        }
+        .contact-us p{
+            color: #6d003b;
+        }
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .contact-form input,
+        .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #6d003b;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6d003b;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+       
+
+        @media only screen and (max-width: 768px) {
+            .dropdown-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            select, .web-btn {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .img {
+                height: 200px;
+            }
+
+            .destinations-row1 {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .row1 {
+                width: 90%;
+                margin: 10px 0;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .header p {
+                font-size: 18px;
+            }
+
+            .img {
+                height: 150px;
+            }
+
+
+            .row1 p {
+                font-size: 12px;
+            }
+
+            .row1-btn  {
+                font-size: 14px;
+                padding: 8px 15px;
+            }
+
+            .contact-form label,
+            .contact-form input,
+            .contact-form select,
+            .contact-form button {
+                font-size: 14px;
+            }
+
+            .contact-form button {
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>WELCOME TO GAME STATION !</h1>
+        <p>Find the Best Games for your console <strong>NOW</strong></p>
+        <div class="dropdown-container">
+            <select>
+                <option>Choose</option>
+                <option value="PC">PC</option>
+                <option value="PS4">PS4</option>
+                <option value="PS5">PS5</option>
+                <option value="XBOX ONE">XBOX ONE</option>
+                <option value="SWITCH">SWITCH</option>
+            </select>
+            <button class="web-btn">SEARCH PLATFORM</button>
+        </div>
+    </header>
+    <br><br>
+
+    <div class ="img"align="center"><img src="images/logoo.png" ></div>
+
+    <section class="games">
+        <h2>Games</h2>
+        <p>The Best Selling games for PS4</p>
+        <div class="games-row1">
+            <div class="row1">
+                <img src="images/rdr2.jpg" alt="Paddy Fields">
+                <div class="row-content">
+                    <h3>Red Dead Redemption 2</h3>
+                    <strong>PS4</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellat molestiae pariatur debitis aut repudiandae corporis dolores facilis? Possimus officiis rem velit placeat voluptate adipisci iure ad incidunt dolorum nisi?</p>
+                    <button class="row1-btn">BUY NOW !</button>
+                </div>
+            </div>
+            
+            <div class="row1">
+                <img src="images/gta.png" alt="Paddy Fields">
+                <div class="row-content">
+                    <h3>Grand Theft Auto 5</h3>
+                    <strong>PS4</strong>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit velit doloremque magnam, modi illum itaque cumque voluptates optio soluta, corrupti quidem, doloribus ut pariatur autem nihil fugit ipsa aut quibusdam!</p>
+                    <button class="row1-btn">BUY NOW !</button>
+                </div>
+            </div>
+            <div class="row1">
+                <img src="images/lou2.jpeg" alt="Paddy Fields">
+                <div class="row-content">
+                    <h3>Last of Us 2</h3>
+                    <strong>PS4</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aspernatur animi amet illo ad itaque minus corrupti excepturi quae sequi officiis dolor nisi dolorem a repellat voluptas, ab voluptatibus doloremque?<p>
+                    <button class="row1-btn">BUY NOW !</button>
+                </div>
+            </div>
+
+            <div class="row1">
+                <img src="images/witch.jpg" alt="Paddy Fields">
+                <div class="row-content">
+                    <h3>Witcher 3</h3>
+                    <strong>PS4</strong>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum temporibus nesciunt excepturi repellat, sint dolores in, pariatur eos neque ad quam delectus, hic nisi vitae beatae animi adipisci quasi aperiam!</p>
+                    <button class="row1-btn">BUY NOW !</button>
+                </div>
+            </div>
+            
+            <div class="row1">
+                <img src="images/spd.avif" alt="Paddy Fields">
+                <div class="card-content">
+                    <h3>Spiderman: Miles Morales</h3>
+                    <strong>PS4</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut maiores, tenetur iste maxime voluptatibus exercitationem aliquid dolorum repudiandae nisi reiciendis illum corporis alias veritatis a, libero natus vel. Quis, inventore.</p>
+                    <button class="row1-btn">BUY NOW !</button>
+                </div>
+            </div>
+            <div class="row1">
+                <img src="images/eld.jpeg" alt="Paddy Fields">
+                <div class="row-content">
+                    <h3>Elden Ring</h3>
+                    <strong>PS4</strong>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id, maxime corrupti iste deserunt dolorum quo commodi unde, eligendi impedit doloribus dolores quis! Quo amet autem rerum voluptatum ipsa dolorem veniam!</p>
+                    <button class="row1-btn">BUY NOW !</button>
+                </div>
+            </div>
+        
+        </div>
+    </section>
+
+    
+
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <p>Our Sales Team will reach out to you ASAP!</p>
+        <div class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+
+            <label for="platform">Your Gaming Platform</label>
+            <select id="platform" name="platform">
+                <option>Choose</option>
+                <option value="PC">PC</option>
+                <option value="PS4">PS4</option>
+                <option value="PS5">PS5</option>
+                <option value="XBOX ONE">XBOX ONE</option>
+                <option value="SWITCH">SWITCH</option>
+            </select>
+
+            <label for="game">Where game would you like to buy?</label>
+            <select id="game" name="game">
+                <option>Choose</option>
+                <option value="RDR2">Red Dead Redemption 2</option>
+                <option value="GTA5">Grand Theft Auto 5</option>
+                <option value="LOU2">The Last of Us 2</option>
+                <option value="W3">Witcher 3</option>
+                <option value="SPD">Spiderman: Miles Morales</option>
+                <option value="ELD">Elden Ring</option>
+                
+            </select>
+
+            <label for="contact-number">Contact Number</label>
+            <input type="text" id="contact-number" name="contact-number">
+
+            <button type="submit">SUBMIT </button>
+        </div>
+    </section>
+</body>
+</html>
